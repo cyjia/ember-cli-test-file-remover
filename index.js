@@ -10,11 +10,9 @@ module.exports = {
       options = registry.app.options['test-file-remover'];
       appName = registry.app.name;
       if (options.files) {
-        console.log(appName);
         options.files = options.files.map(function(f) {
           return path.join(appName, "tests", f);
         });
-        console.log(options.files);
       }
     }
     registry.add('js', {
