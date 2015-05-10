@@ -12,6 +12,10 @@
     "test",
     "ember-addon"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyjia/ember-cli-test-file-remover"
+  },
   "author": "cyjia",
   "license": "MIT",
   "dependencies": {

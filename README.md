@@ -3,6 +3,7 @@ Ember cli test file remover
 
 # Usage
 * In your ember-cli app
+* npm install ember-cli-test-file-remover --save-dev
 * Change Brocfile.js to add test files to remove 
 
 # Example
