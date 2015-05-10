@@ -9,7 +9,8 @@ module.exports = {
     if (registry && registry.app && registry.app.options) {
       options = registry.app.options['test-file-remover'];
       appName = registry.app.name;
-      if (options.files) {
+      env = registry.app.env;
+      if (options && options.files) {
         options.files = options.files.map(function(f) {
           return path.join(appName, "tests", f);
         });
@@ -20,10 +21,10 @@ module.exports = {
       ext: 'js',
       toTree: function(tree) {
         if (options) {
-          return removeFile(tree, options);
+          if (!!!options.env || options.env === env)
+            return removeFile(tree, options);
         }
-        else
-          return tree;
+        return tree;
       }
     });
   }
