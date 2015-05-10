@@ -1,2 +1,23 @@
 # ember-cli-test-file-remover
 Ember cli test file remover
+
+# Usage
+* In your ember-cli app
+* Change Brocfile.js to add test files to remove 
+
+# Example
+
+Brocfile.js
+
+    var app = new EmberApp({
+      'test-file-remover': {
+        files: ['integration/fully-loaded-set-of-loans-test.js']
+      }
+    });
+
+File structure is like
+
+    your app
+      -- tests
+          -- integration
+              -- fully-loaded-set-of-loans-test.js
