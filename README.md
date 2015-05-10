@@ -21,3 +21,6 @@ File structure is like
       -- tests
           -- integration
               -- fully-loaded-set-of-loans-test.js
+
+# Issues and Features
+  Please use Github to submit your issues and features.
