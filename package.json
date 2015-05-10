@@ -1,0 +1,21 @@
+{
+  "name": "ember-cli-test-file-remover",
+  "version": "0.0.1",
+  "description": "remove test files from test tree",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ember-cli",
+    "remove",
+    "test",
+    "ember-addon"
+  ],
+  "author": "cyjia",
+  "license": "MIT",
+  "dependencies": {
+    "broccoli-file-remover": "^0.3.1",
+    "broccoli-funnel": "^0.2.3"
+  }
+}
